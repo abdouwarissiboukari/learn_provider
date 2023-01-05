@@ -7,4 +7,14 @@ class CountProvider with ChangeNotifier {
     count++;
     notifyListeners();
   }
+
+  decrementCounter() {
+    count--;
+    notifyListeners();
+  }
+
+  resetCounter() {
+    count = 0;
+    notifyListeners();
+  }
 }

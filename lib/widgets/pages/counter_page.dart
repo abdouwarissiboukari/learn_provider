@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:learn_provider/models/count_type.dart';
 import 'package:learn_provider/providers/count_provider.dart';
+import 'package:learn_provider/widgets/simple_widgets/count_button.dart';
 import 'package:learn_provider/widgets/simple_widgets/counter_text.dart';
 import 'package:provider/provider.dart';
 
@@ -15,12 +17,16 @@ class CounterPage extends StatelessWidget {
         ),
         CounterText(),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            FloatingActionButton(
-              onPressed: (() =>
-                  context.read<CountProvider>().incrementCounter()),
-              heroTag: 0,
-              child: const Icon(Icons.add),
+            CountButton(
+              type: CountType.decrement,
+            ),
+            CountButton(
+              type: CountType.reset,
+            ),
+            CountButton(
+              type: CountType.increment,
             ),
           ],
         )
