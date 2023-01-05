@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_provider/widgets/pages/color_page.dart';
 import 'package:learn_provider/widgets/pages/counter_page.dart';
 
 class TabPage extends StatelessWidget {
@@ -33,7 +34,7 @@ class TabPage extends StatelessWidget {
           ),
           body: TabBarView(children: [
             CounterPage(),
-            CounterPage(),
+            ColorPage(),
             CounterPage(),
           ]),
         ));
