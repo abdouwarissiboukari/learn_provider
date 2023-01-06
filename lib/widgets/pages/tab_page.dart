@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_provider/widgets/pages/color_page.dart';
 import 'package:learn_provider/widgets/pages/counter_page.dart';
+import 'package:learn_provider/widgets/pages/todo_list.dart';
 
 class TabPage extends StatelessWidget {
   static List<Icon> icons = const [
@@ -35,7 +36,7 @@ class TabPage extends StatelessWidget {
           body: TabBarView(children: [
             CounterPage(),
             ColorPage(),
-            CounterPage(),
+            ToDoList(),
           ]),
         ));
   }
