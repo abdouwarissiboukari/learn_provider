@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_provider/providers/color_provider.dart';
 import 'package:learn_provider/providers/count_provider.dart';
-import 'package:learn_provider/widgets/pages/counter_page.dart';
 import 'package:learn_provider/widgets/pages/tab_page.dart';
 import 'package:provider/provider.dart';
 

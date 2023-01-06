@@ -15,7 +15,7 @@ class TabPage extends StatelessWidget {
     ),
   ];
 
-  List<Tab> tabs = icons
+  final List<Tab> tabs = icons
       .map((icon) => Tab(
             icon: icon,
           ))
